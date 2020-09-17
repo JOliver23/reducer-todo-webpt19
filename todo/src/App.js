@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import TodoList from './components/TodoList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lambda Reducer Todo</h1>
+      <form>
+      <input className="input" type="text" name="task" placeholder="New Todo Task..."/>
+      </form>
+      <TodoList />
     </div>
   );
 }
